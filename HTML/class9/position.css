@@ -1,0 +1,26 @@
+#container{
+    width: 10%;
+    height: 400px;
+    background-color: rgb(83, 80, 80);
+    position: absolute;
+    top: 10%;
+    left: 200px;
+    /* right: ; */
+    /* bottom: ; */
+}
+#first{
+    height: 100%;
+    background-color: rgb(105, 56, 240);
+}
+#second{
+    height: 100%;
+    background-color: rgb(86, 25, 167);
+}
+#third{
+    height: 100%;
+    background-color: rgb(50, 27, 92);
+}
+#fourth{
+    height: 100%;
+    background-color: rgb(32, 4, 65);
+}

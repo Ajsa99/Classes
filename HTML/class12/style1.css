@@ -1,0 +1,36 @@
+#container{
+    display: inline-block;
+    width: 100%;
+}
+#tailblock{
+    display: inline-block;
+    width: 17%;
+}
+#tailblock img{
+    float: left;
+    vertical-align: top;
+}
+.text{
+    display: inline-block;
+    width: 20%;
+}
+.text a{
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:600px) {
+    #container{
+        display: block;
+        width: auto;
+        margin: auto;
+        text-align: center;
+    }
+    #tailblock{
+        display: block;
+        width: auto;
+    }
+    .text{
+        width: 100%;
+    }
+}

@@ -1,0 +1,10 @@
+p{
+    border: 1px solid powderblue;
+    padding: 30px;
+    margin: 30px;
+}
+a:hover{
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+}

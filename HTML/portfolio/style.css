@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    background-color: white;
+}
+#navigation{
+    background-color:#cdcbd6;
+}
+#navigation ul li,
+#navigation ul {
+    display: inline-block;
+}
+#navigation ul li{
+    margin-right: 20px;   
+}
+#logo{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+#logoContainer{
+    width: auto;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+#navigation a {
+    text-decoration: none;
+    color: #589CCC;
+    font-size: 24px;
+}
+#navigation a:hover{
+    cursor: pointer;
+    color: yellow;
+}
+.sektion{
+    width: auto;
+    height: auto ;
+    background-color: #FFFAFA;
+    border: 0.5px solid gray;
+    margin: 10px 1px;
+}
+.hometext{
+    width: 53%;
+    height: 210px;
+    float: left;
+    padding-top: 10px;
+}
+
+.homeImg{
+    width: 47%;
+    height: 210px;
+    float: left;
+    padding-top: 20px;
+}
+
+#projects > div {
+    width: 100%;
+    font-size: 0;
+}
+
+#projects > div > div {
+    width: 50%;
+    height: 250px;
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.projectImg {
+    height: 100%; 
+    width: 20%;
+    padding: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.projectImg img{
+    display: table;
+}
+
+.projectText {
+    font-size: 15px;
+    height: 100%; 
+    width: 80%;
+    padding: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.projectText p {
+    display: table;
+    margin: 5px;
+}
+
+.projectText h1 {
+    display: table;
+    margin: 5px;
+}
+
+p{
+    font-family: monospace;
+    /* line-height: 0px; /* za razmak izmedju redova */
+}
+h1{
+    font-family:cursive;
+    line-height: 30px;
+}
+h2{
+    font-family: fantasy;
+    line-height: 50px;
+
+}
+h3{
+    font-family: monospace;
+    line-height: 0px;
+}

@@ -1,0 +1,30 @@
+#text{
+    text-align: center;
+    margin: 100px 300px;
+}
+#okvirContainer{
+    text-align: center;
+}
+.okvir{
+    width: 18%;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 30px;
+}
+.okvir p{
+    color: gray;
+}
+
+@media screen and (max-width:600px) {
+    #text{
+        margin: 0px;
+    }
+    .okvir{
+        width: auto;
+        display: block;
+        margin: 30px 30px;
+    }
+}
