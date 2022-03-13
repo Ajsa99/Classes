@@ -1,0 +1,21 @@
+#parent{
+    height: 600px;
+    background-color: blue;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly; /*x osa*/
+    align-items: flex-start; /*y osa*/
+    flex-wrap: wrap;
+}
+.children{
+    width: 50%;
+    margin: 20px;
+    height: 100px;
+    background-color: blueviolet;
+}
+.children1{
+    width: 25%;
+    margin: 20px;
+    height: 100px;
+    background-color: blueviolet;
+}

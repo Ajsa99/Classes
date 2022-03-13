@@ -1,0 +1,17 @@
+#top{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+}
+#galery{
+    text-align: center;
+}
+.img{
+    display: inline-block;
+    margin: 20px;
+    padding: 30px;
+    background-color: lightgray;
+    text-align: start;
+}

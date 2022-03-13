@@ -5,93 +5,88 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav id="navigation">
-        <div id="logoContainer">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAyVBMVEX///8AgfoAY98AgvsIaeEFZ+EAfvcCZeAIZt4Ae/oBe/QGbOQAffoAaeQAf/oAdfoFcOgAd/EAcOsAePoAXd8AdPoAYN8Ac+4AVt4AUdzY5/7g7P4AWd/p8v4AdPUAXt+gxfy51P3y+P/Q4v5gjucnceJ+ouuEtfx7sPyPu/y6zfSxz/1mpfunyf1rl+kah/pEguUAaO5Wnfs/k/vD2v0sjPqyx/KIqOs+e+OlvfBOmvtAlPybtu9kpfytxPIzdeJnlOh1oe1RiujoQQqTAAAI40lEQVR4nO2ci3KiSBRAFVREEVTwEUVEzEOjM46vaLJJZmf+/6MWFOjbQINmXO3duqdqJlUJTcGh+/btB+RyCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgyP+Q/svufv/wsL9/fB2fWmYwe1qtF9u3iX1yEX7p7aSuabQPDE2z+/szu4xjLzRZUdW8qiqyrq1m//5l/ots9ndDgaJtdh+d1DLORJPzEFWXp1e63svT23fbQpzh3WNKIVtT8jFk3b7WRV+Wx7skAx6G8cwoM9jqcQMe+qJ/1Yu/CIOqyTAgSJLQvU8sNNJVURQTJaiafd0b+HM2ic3AV+AyLCQ816kmiiwH+bw2v/5t/AmvdywDRwVeVdhEC010Mc1BXv7rFrfyVd6ZCqQQ4e6FLvQhi2K6BGV7m9v5CuxaIEG6r7AQUXBwoMiymyP8ZyU8n6agWIQSgoZwcKDq4sSezaYfik5rkN9ud1vn0GMpkCIKXAlh1jjV8kSBNu8Fvx9/aJQFfXKbmzoPZxi7eS9J9jJmIaLAleAnCiMNPOst1WX0/6JSBu2/kDnvow6M7t+fvX5//PJraAqUAU/C4Yn3gAIt9qRtjZIwuP49ncl7JDVqd3dkfPD8YNIKipLh/tUBwa/1LX7OMawJKvdxsR8JBuaefmyvZhsqKBaFh1xurZRCBaPEs8JRFPcjqJ9tv/c/0v0VPWDwMCxStP+eWqXAAau192FNaPHdGj5NCTro7hKO+W1EJNRKBwfu/zrzEW9ATFD5zhcNATowkxTkct8jEqSG58BVIKeMCKagJuixNJsjdoZ3+4EEI3lwGJdQdB24CiqLtHOvwbxC6oG3xemGlcD9164yD7yPxISap6CU3usNQGvQ+U0SHocSkHCXMuvxU4i0BleClXFjNukcVPGyF345gmpwkCAZ72nHClQHWShXSo2PrPOLJIvQE7tQDtgNJYLAbgke/S5U4FJpZJ5/RMIit4nS0H22ZGCcEbs/TUpBUTgh1i9IRdB62YffgBc/2h8UtH9kHf69TQy4GCfcFKgICp8Ta3uh5uJ76GbfUlUCCgpSets5opZIRPjzC748/W4twB0FZFYDt4BJFHjpYnJCRTGVw6xa5rF7fG/XCOYpmdwPoUAUFAtm9gqCo5VKvgWFxxmlOlAgFU4oMNOrQEGxUPyZXeZNCSVo6Ut2t6BvAgft1NzgiKPnS+XQgNcohtmlZnrogMPGQDWF7gmj25WSFxtFoKBQMDOLOS3SGPjrGfawKZwQEQ8ziGK1APtH6XdmMa8x+GmSfIGrviiOWa2SpnDCJgP5kO+UyrB/LDDXYkNsOagHeZ23NGmzbB7xVJjZ4Wp+HAC5rQEocGtCVrm+VSr5zUG2L3HhF2QnNENq+8zDxy2/mxcLUEEhO0mQQwdK5iDryuxrxMEye9KzFGT+YqUMHWQnCR9K4EBVL3PpF2PZBA4y91FNjtEgL4p5sU5VhMxwasuBA94yhB7lIPPoVqBAFGVHoipCVlgcW6EDzqYVP5cd4iAzHCyOayoHBXbu2aAkZIRFkC5zFhSfap2QWtay6FQPFYje7OiPs8JihWRJfK2/vjWBg4zsYNAKG4J4qM4D85yweBgyHLMkvtYZGkRBJyskbkkw8O9i1z7cfNklOyxOwvEzZx3DskFYpofrbzqpBpr/yKVAwUFCelj0Oga/Z9Uudv0XYAAcdKzUQx2NKAgbtBcWy+VQQmpYHFmhA52nhccedJA+5btSQDQIa8wPqQwcCGlh0escVZW/EcPGAg5WaUeOQDUAfdvALEMJaWHxMGLwHfCUIMxCB5VGJ7XH8hcNjxuPwO93beigmJJieAlCUA94Wmn5ZlUqgQUrbbQwAQ7oO6AcFIavrDPkcsQBV1NJtuvgIMH9Ydns48bhuqnbL66pP70Y0EFhyO5cSDzgKlGceg58rIQNRQFkB6rbL0YC2l6CDiTWur03ela5d8CuoE9gW1FsOrDfhQ6q7CRBDhRw5kAGDpiBCu7Ay+uxyv7YJgoK1UKNdZqwKXDmgNSDlG0EC6AgaXMZ5aAqxbZz+Shkrcm+zOVfhKk/w+Whs+LBE/WaUsIBx7AYOKgajHEHWG9LCT1XxwYOWNsHx1RLSGwwe6igWq0nn0gLF1652pIzs4gD1qgeVgLGqNcLi8CBlPju1wA44ClP3AAHjPv7gK+rtRi58GMbKGC0hp5FHPA0XuhrRIGauDNgBjeayk+sE0lF4KCe2BpmeuiAr0lVLZzodB0kPJ0+tfU8KSAeeTZBNajXa9/jh0zkoGvkbB/GogSeckJQpF5R0lKa8b0Q1gKPZXxeTlGD6YNItn1r5rC1x6e44B7T9PUhZwgVuBKikeMwt+6fiK851Rm1uT7abX9QmYGc2opfDMpBvRk5mkyp8jVspDfSxvLgOaVAyxj0/y5CBfUmvTtlRJYXuHujZQHfvKJ3UL5RCjJXSp025aDT/AmM9skqU17lbef2lLpRdRH2DZs8/R579nz4swEU1BuNTjOMoRurEi478/c+C90Y3Hq6GvWdwdiOvsfeOuG7Fr+EOnTQaCy333oDpz9bBwqOS67cvQm/iryTqsq6ixz5LftFFchDlVLg0rSspWU1KsABh1uWx5GKkMiJmwoHw2rEAZme8LNRziZUfaIVIYGTXzvYGEFEZDrgLiJ6RCNCAqevC70vqWoQd6CmJZu3w2Z8xiPklHgYcIyLYTVoRByUlNSVnNuxSviaC1Rw1pP7LoBq0Ig64G9zYsA2TcJ5ClwJS6CASDg6aPE0c0DDlqDqZ3/w6oks5FYiAeFcn1dlxYgJ8uILuf3LMiEeuA4Ui+8PiCV+4kltfW2UO9guo92Ct4Cx5WysFMOZRz71lVe09Zdb76hidWgFFlcT6iyc6fGTb/433/T5H9XczWppNY9totOxWmu+5gxSGIym87ftdr26yLf/xvZktV1s1/PpiKtJVARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEOTr/ANpYcrE6SxR7gAAAABJRU5ErkJggg=="
-         alt="Logo"
-         id="logo">
-        </div>
 
+    <!-- Navigacioni bar -->
+    <nav id="navigation">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#aboutMe">About Me</a></li>
-            <li><a href="#projects">My Projects</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-            <li><a href="#email">Email Me</a></li>
+            <li><a href="#home" style="padding-left:30px;padding-right: 30px;">HOME</a></li>
+            <li><a href="#projects">MY PROJECTS</a></li>
+            <li><a href="#contact" style="padding-left:10px;padding-right: 10px;">CONTACT ME</a></li>
+            <li><a href="#emailme">EMAIL ME</a></li>
         </ul>
     </nav>
 
     <section class="sektion" id="home">
-            <div class="hometext">
-               <h1>Before they sold out <br> readymade gluten</h1>
-                <p style="margin-left:auto;">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. 
-                   Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
-            </div>
-            <div class="homeImg">
-                <img src="images/hundeErcel.jpg" alt="slika" height="150px">
+                <img src="images/ajša alibašić.jpg" alt="" width="400px" style="border-radius: 50%;">
+                <img src="images/jaa.jpeg" alt="slika" height="400px" style="border-radius: 50%;">
+            <div id="hometext">
+                <h2> Ajša Alibašić, 23 years old.</h2>
+                <p>A Bachelor of Software Engineering, State University of Novi Pazar - Serbia, fourth grade.</p>
             </div>
     </section>
-
-    <section class="sektion" id="aboutMe">
-        <h1>Hey I am Ajsa</h1>
-        <p>Hi I am the person you call when something doesn't work</p>
-        <h3>Let's work together</h3>
-    </section>
-
-    <section class="sektion" id="projects">
-
-        <h1>These are project I did</h1>
-
-            <div>
-                <div>
-                    <div class="projectImg">
-                        <img src="images/mesec.jpg" alt="" width="100px">
-                    </div>
-                    <div class="projectText">
-                        <p>This is my first project.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="projectImg">
-                        <img src="images/mesec.jpg" alt="" width="100px" style="display: table;">
-                    </div>
-                    <div class="projectText">
-                        <h1>This is my second Project.</h1>
-                        <p>Here is the link.</p>
-                    </div>
-                </div>
+    
+    <!-- My projects -->
+    <section id="projects">
+        <div>
+                <h2> Here are some of the most interesting projects I have had the pleasure of working on.<br>
+                Online sale, marketing, lifestyle and many more. <br>
+                Frontend done in HTML and CSS. Backend - Java Script.
+                What are you waiting for? Click on <a href="https://agitated-benz-2a6d07.netlify.app">here</a>. 
+            
+                </h2>
+                
+                <!-- <p>The theme of the project is the online sale of watches.</p>
+                <p>Frontend done in HTML and CS. Validation done in JS.</p>
+                <p>Site name Satovi N'watch.</p>
+                <p>You can visit the site by clicking on the link.</p>
+                <a href="">Click me</a> -->
         </div>
     </section>
 
-    <section class="sektion" id="contact">
-        <p><b>You can contact me on:</b></p>
 
-            <a href="https://github.com/Ajsa99" target="_blank">
-            <img src="images/GitHub-Logo.png" alt="" height="50px">
-        </a>
-
-        <a href="https://www.instagram.com/ajsa__a/" target="_blank">
-            <img src="images/instagram.jpg" alt="" height="50px">
-        </a>
+    <section id="emailme">
+        <form>
+            <p><b>Send me a message to realize your idea</b></p>
+            <label for="">Title:</label>
+            <input type="text" name="title" id="title" />
+            <br>
+            <label for="name">Name:</label>
+            <input type="name" name="name" id="name" />
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+            <br>
+            <textarea placeholder="text..." name="" id="" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" name="" id="">
+        </form>
     </section>
 
-<section id="email">
-    <h2>Please contact me for any Job offeres</h2>
-    <form>
-        <label for="">Title:</label>
-        <input type="text" name="title" id="title" />
-        <br>
-        <label for="name">Name:</label>
-        <input type="name" name="name" id="name" />
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" />
-        <br>
-        <textarea placeholder="text..." name="" id="" cols="30" rows="10"></textarea>
-        <br>
-        <input type="submit" name="" id="">
-    </form>
-</section>
+    <section id="contact">
+        <div id="contactList">
+            <ul>
+                <li><a href=""><img src="images/gmail.png" alt="" width="100px"></a></li>
+                <li><a href="https://www.instagram.com/ajsa__a/"><img src="images/instagram.png" alt="" width="100px"></a></li>
+                <li><a href="https://github.com/Ajsa99"><img src="images/github.png" alt="" width="100px"></a></li>
+            </ul>
+        </div>
+        <div id="contactEmail" onmouseover="Open()" onmouseout="Close()">
+        <img src="images/pismo.png" width="200px" alt=""></a>
+        </div>
+    </section>
+
+    <script>
+        function Open(){
+            contactList.style.display = "block";
+            contactEmail.style.display = "none";
+        }
+        function Close(){
+            contactList.style.display = "none";
+            contactEmail.style.display = "block";
+        }
+    </script>
+
+
     
 </body>
 </html>
