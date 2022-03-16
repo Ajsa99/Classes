@@ -73,11 +73,11 @@ body{
 /* Contact me */
 
 #contact{
-    height: auto;
-    margin: 0px 70px;
+    position: relative;
+    top: 300px;
 }
 #contactList{
-    margin: 0px 500px;
+    margin: 0px 560px;
     width: auto;
     height: auto;
     display: none;
@@ -88,17 +88,16 @@ body{
 #contactList ul li{
     display: inline-block;
 }
-#contactEmail img{
+#contactEmail{
     text-align: center;
-    padding: 10px 60px;
+}
+#contactEmail img{
+    padding: 0px 60px;
     margin: 0px 530px;
 }
 
-/* Email me */
-
-#emailme{
-    position: relative;
-    left: 100px;
-    top: 150px;
-    width: 20%;
+/* My form */
+#myForm{
+    /* display: none; */
 }
+

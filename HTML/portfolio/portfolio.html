@@ -12,7 +12,7 @@
             <li><a href="#home" style="padding-left:30px;padding-right: 30px;">HOME</a></li>
             <li><a href="#projects">MY PROJECTS</a></li>
             <li><a href="#contact" style="padding-left:10px;padding-right: 10px;">CONTACT ME</a></li>
-            <li><a href="#emailme">EMAIL ME</a></li>
+            <li><a href="#emailme" onclick="openForm()">EMAIL ME</a></li>
         </ul>
     </nav>
 
@@ -34,32 +34,7 @@
                 What are you waiting for? Click on <a href="https://agitated-benz-2a6d07.netlify.app">here</a>. 
             
                 </h2>
-                
-                <!-- <p>The theme of the project is the online sale of watches.</p>
-                <p>Frontend done in HTML and CS. Validation done in JS.</p>
-                <p>Site name Satovi N'watch.</p>
-                <p>You can visit the site by clicking on the link.</p>
-                <a href="">Click me</a> -->
         </div>
-    </section>
-
-
-    <section id="emailme">
-        <form>
-            <p><b>Send me a message to realize your idea</b></p>
-            <label for="">Title:</label>
-            <input type="text" name="title" id="title" />
-            <br>
-            <label for="name">Name:</label>
-            <input type="name" name="name" id="name" />
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" />
-            <br>
-            <textarea placeholder="text..." name="" id="" cols="30" rows="10"></textarea>
-            <br>
-            <input type="submit" name="" id="">
-        </form>
     </section>
 
     <section id="contact">
@@ -71,6 +46,7 @@
             </ul>
         </div>
         <div id="contactEmail" onmouseover="Open()" onmouseout="Close()">
+            <h3>Click on the mailbox for my socials</h3>
         <img src="images/pismo.png" width="200px" alt=""></a>
         </div>
     </section>
@@ -86,6 +62,36 @@
         }
     </script>
 
+    <!-- <section id="emailme">
+    <button onclick="openForm()">Open Form</button>
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+    function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
+        <form id="myForm">
+            <p><b>Send me a message to realize your idea</b></p>
+            <label for="">Title:</label>
+            <input type="text" name="title" id="title" />
+            <br>
+            <label for="name">Name:</label>
+            <input type="name" name="name" id="name" />
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+            <br>
+            <textarea placeholder="text..." name="" id="" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" name="" id=""><br>
+            <button type="button" onclick="closeForm()">Close Form</button>
+        </form>
+    </section> -->
 
     
 </body>
