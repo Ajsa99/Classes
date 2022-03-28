@@ -1,0 +1,15 @@
+#GridContainer{
+    display: grid;
+    /* grid-template-columns: 200px auto; */
+    /* grid-template-rows: 100px 200px; */
+    /* grid-template:"a a" auto
+                  "b c" 50%
+                  "d d" auto; */
+    /* gap: 10px; */
+    grid-template-columns:  auto auto auto;
+    grid-template-rows: 100px 600px 200px;
+}
+.head{
+    grid-column: 1/4;
+    background-color:brown;
+}
