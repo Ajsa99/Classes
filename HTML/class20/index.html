@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .red{
+            color:"red";
+        }
+    </style>
+</head>
+<body>
+    <!-- <input type="input 1" on/> -->
+    <button id="click" onclick="counter()">Click me</button>
+    <p id="count"></p>
+
+    <p id="test"class="test2" onclick="clickMe()">This is random text.</p>
+    <div id="addMe">
+
+    </div>
+
+    <script>
+        function clickMe(){
+        var div = document.getElementById("addMe");
+        var p = document.createElement("p")
+        p.textContent = "Paragraf"
+        div.appendChild(p)
+        }
+
+    //    function clickMe(params){
+    //     var element = document.querySelector("#test");
+    //     var text = document.createTextNode("this is text");
+    //     var child = document.createElement("p");
+    //     child.textContent = "this is text";
+    //     element.style.color= "green";
+    //     element.classList.add("red");
+
+    //     // element.appendChild(child);
+
+    //     console.log(element);
+
+    //    }
+
+          var count = 0;
+          function counter() {
+              var p = document.getElementById("count");
+              count = count + 1;
+
+              p.textContent = count;
+          }
+    </script>
+</body>
+</html>
