@@ -3,3 +3,4 @@ function sum(a, b) {
 }
 
 export {sum};
+// export default {sum};
