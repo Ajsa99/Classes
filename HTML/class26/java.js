@@ -26,7 +26,6 @@
 
 // console.log(sumR(10));
 
-
 // function productR(n) {
 //     var prod = 0;
 //     if(n === 1){
@@ -52,7 +51,6 @@
 //     array.push(n);
 //     array.push(...contdown(n-1));
 
-
 //     // return string;
 //     return array;
 // }
@@ -69,13 +67,13 @@
 
 //2,5
 //2,3,4,5
-function range(a,b) {
-    if(a === b){
-        return b;
-    }
-    
-    var string = `${a}, ${range(a+1, b)}`;
-    return string;
+function range(a, b) {
+  if (a === b) {
+    return b;
+  }
+
+  var string = `${a}, ${range(a + 1, b)}`;
+  return string;
 }
 
-console.log(range(2,5));
+console.log(range(2, 5));

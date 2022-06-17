@@ -1,67 +1,52 @@
+// // import fetch from "node-fetch";
 // const promise = new Promise((resolve, reject) => {
-//     const random = Math.random() * 1000;
+//   const random = Math.random() * 1000;
 
-//     setTimeout(() => {
-//         if(random > 500){
-//         resolve(random);
-//         }else{
-//             reject(random);
-//         }
-//     }, random);
+//   setTimeout(() => {
+//     resolve(random);
+//   }, 2000);
 // });
-
-// // promise.then((value) => console.log(value));
 
 // promise
-//     .then((value) => console.log("resolve", value))
-//     .catch((value) => console.log("reject", value))
-//     .finally(() => console.log("finally"));
+//   .then((value) => console.log("resolve", value))
+//   .catch((vale) => console.log("reject", vale))
+//   .finally(() => console.log("finally"));
 
-
-
-// fetch("http://api.qotable.io/random")
-//     .then((response) => {
+// fetch("https://api.quotable.io/random")
+//   .then((response) => {
 //     return response.json();
-// })
-//     .then((result) => {
-//         console.log(result);
-// });
-
-
+//   })
+//   .then((result) => {
+//     console.log(result);
+//   });
 
 // const promise = new Promise((resolve, reject) => {
-//     const random = Math.random() * 1000;
+//   const random = Math.random() * 1000;
 
-//     setTimeout(() => {
-//         resolve(random);
-//     }, random);
+//   setTimeout(() => {
+//     if (random > 500) {
+//       resolve(random);
+//     } else {
+//       reject(random);
+//     }
+//   }, random);
 // });
 
 // const promise2 = async () => {
-//     // const random = Math.random() * 1000;
-//     console.log("Pocetak:");
-//     const randomNumbre = await promise;
-//     console.log(randomNumbre);
-//     const random2 = await promise;
-//     console.log(randomNumbre);
-//     const random3 = await promise;
-//     console.log(randomNumbre);
-//     const random4 = await promise;
-//     console.log(randomNumbre);
+//   console.log("pocetak");
+//   const randomNumber = await promise;
+//   console.log(randomNumber);
+// };
 
-//     return random;
-// }
-
-// promise2().then((value) => console.log(value));
+// promise2();
 // console.log("main funkcija");
 
-
-Promise.then(() => {
-    new Promise().then(() => {
+promise.then(() => {
+  new Promise().then(() => {
     new Promise().then((value) => value);
-    });
+  });
 });
 
-Promise.all([promise.promise]);
+Promise.all([promise, promise]);
 Promise.race([]);
 Promise.allSettled([]);

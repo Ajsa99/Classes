@@ -1,6 +1,5 @@
 // var grade = 70;
 
-
 // if(grade <= 55){
 //     console.log("Ocena je 5");
 // }else if(grade <= 66){
@@ -22,26 +21,32 @@
 // 9 -> 86-95
 // 10 -> >95
 
-var array = [1,12,13,123];
+var array = [1, 12, 13, 123];
 
-array.push("str");
-console.log(array);
+// array.push("str");
+// console.log(array);
 
-array.pop();
-console.log(array);
+// array.pop();
+// console.log(array);
 
-array.unshift("dodaje");
-console.log(array);
+// array.unshift("dodaje"); //dodaje na pocetak niza
+// console.log(array);
 
-array.shift();
-console.log(array);
+// array.shift(); // sklanja sa pocetka niza
+// console.log(array);
 
+// var arraya = [1, 2, 3];
+// var arrayb = [4, 5, 6];
 
-var c = array.concat(arraya);  //sastavljanje 2 array u 1
-var c = array.concat(arraya).concat(arrayb);
+// var c = array.concat(arraya); //sastavljanje 2 array u 1
+// var c = array.concat(arraya).concat(arrayb);
 
-const index = array.findIndex(122);   //index od  .. vrednosti
+// console.log(c);
 
-const index = array.find(122);  //vraca vrednsot elementa
+const index = array.findIndex(122); //index od  .. s
 
-const index = array.includes(12);  //vraca boolean vrednost 
+const index = array.find(122); //vraca vrednsot elementa
+
+const index = array.includes(12); //vraca boolean vrednost
+
+console.log(index);

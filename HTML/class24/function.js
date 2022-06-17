@@ -1,34 +1,31 @@
+// function concatArrays(array1, array2) {
+//   if (Array.isArray(array1) && Array.isArray(array2)) {
+//     return array1.concat(array2);
+//   }
 
-// function concatArray(array1, array2){
-//     if(Array.isArray[array1] && Array.isArray[array2]){
-//         return  array1.concat(array2);                     //concat spaja dva Array-a
-//     }
-//         return undefined;
+//   return undefined;
 // }
 
-// var a = [1,2,3];
-// var b = ["a","b","c"];
+// console.log(concatArrays([1, 2], ["a", "b"]));
 
-// console.log(concatArray(a,b));
+function commonLetters(a, b) {
+  if (typeof a !== "string" || typeof b !== "string") {
+    return undefined;
+  }
 
+  var common = [];
+  for (let index1 = 0; index1 < a.length; index1++) {
+    for (let index2 = 0; index2 < b.length; index2++) {
+      if (a[index1] === b[index2]) {
+        common.push(a[index1]);
+      }
+    }
+  }
 
+  return common;
+}
 
-// function comonLetters(a,b){
-//     if(typeof a !== 'string' || typeof b !== 'string'){
-//         return undefined;
-//     }
-
-//     var common = [];
-//     for(let i; i < a.length; i++){
-//         for(let j; j < b.length; j++){
-//             if(a[i] === b[j])
-//             common.push(a[i]);
-//         }
-//     }
-//     return common;
-// }
-// console.log(comonLetters("dea","abc"));
-
+// console.log(commonLetters("jes", "abds"));
 
 // var a = 10;
 
@@ -43,7 +40,6 @@
 //         console.log(`Default`);
 //         break;
 // }
-
 
 // function getHexColor(color){
 //     switch(color){
@@ -61,15 +57,15 @@
 // }
 // console.log(getHexColor("black"));
 
-// //Hoisting
+//Hoisting
 // a();
 
 // console.log(test);
 
 // var test = 10;
 
-// function a(){
-//     test = 20;
+// function a() {
+//   test = 20;
 // }
 
 // console.log(test);
@@ -77,8 +73,8 @@
 //Scope
 var test = 10;
 
-function a(){
-    var test = 20;
+function a() {
+  var test = 20;
 }
 
 a();
